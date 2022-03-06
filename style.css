@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 5, 2022, 10:47:56 AM
+    Author     : svp
+*/
+
+/* global */
+:root{
+    --bg-navy:#7AE0F6;
+    --bg-danger:#FF0000;
+    --bg-orange:#FC8D0C;
+    --bg-success-dark:#296414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.reg-text{
+    font-family:poppins;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.card-right-top-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 130px;
+    height: 34px;
+    border-radius: 24px;
+    border: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-success{
+    background-color: #16A951;
+    color: white;
+}
+
+/* navigation*/
+.nav-bar{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding:17px 24px;
+}
+
+.left-nav{
+    width: 50%;
+}
+
+.bg-text-danger{
+    color:var(--bg-danger);
+    font: 28px roboto;
+}
+
+.bg-text-orange{
+    color:var(--bg-orange);
+    font: 28px roboto;
+}
+
+.bg-text-navy{
+    color: var(--bg-navy);
+    font: 28px roboto;
+}
+
+.bg-text-success{
+    color: var(--bg-success-dark);
+    font:18px roboto;
+}
+
+.right-nav{
+    width:50%;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-list{
+    list-style: none;
+    font-family: roboto;
+}
+
+.nav-select{
+    font-family: roboto;
+    border: none;
+    width: 102px;
+    text-align: center;
+    font-size:16px;
+    height: fit-content;
+    padding-right:10px; 
+    margin:28px;
+    font-weight: 100;
+}
+
+.nav-select option{
+    border-radius: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/* end nav */
+
+.search-bar{
+    width:457px;
+    height:65px;
+    margin-left:20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inp-search-bar{
+    width:317px;
+    height:57px;
+    border-radius:20px;
+    border:none;
+    padding-left: 13px;
+}
+
+/*body*/
+
+.main-body{
+    background-color: #dbdbdb;
+    padding-top:5px;
+}
+
+.display-card{
+    width:60%;
+    height:25%;
+    box-sizing: border-box;
+    padding: 8px 6px;
+    background-color:white;
+    margin-left: 24px;
+    border-radius:24px;
+    margin-top:24px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.hotel-img{
+    width:30%;
+    height: 100%;
+    border-radius:24px;
+    margin-left: 6px;
+}
+
+.hotel-info{
+    width:40%;
+    margin-left:12px;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 5px;
+    line-height: 32px;
+}
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    margin: 12px 2px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card-right-top{
+    width:100%;
+    height:65%;
+    background-color: #ECF9E2;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+.card-right-bottom{
+    display: flex;  
+    width:100%;
+    margin-top: 12px;
+    height: 30%;
+    justify-content: space-between;
+}
+
+.card-right-bottom-1{
+    width: 35%;
+    height:56px;
+    border:1px solid #A3A2A2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.card-right-bottom-2{
+    width: 60%;
+    height:56px;
+    border:1px solid #A3A2A2;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.mapouter{
+    width: 36%;
+    height: 849.83px;
+    position: absolute;
+    right: 25px;
+    top: calc(168px);
+    border-radius: 24px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:600px;height:400px;
+}
+
+.gmap_iframe {
+    width: 100%;
+    height: 849.83px;
+    position: absolute;
+    right: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px gray;
+}
