@@ -9,7 +9,7 @@ and open the template in the editor.
         <title>GetMyTrip | get exclusive offers on hotel booking upto 50% off</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <nav class="nav-bar">
@@ -17,24 +17,21 @@ and open the template in the editor.
             <div class="left-nav">
                 <span class="bg-text-danger">get</span><span class="bg-text-orange">my</span><span class="bg-text-navy">trip</span>
             </div>
-            <div class="right-nav">
-                <ul class="nav-ul">
-                    <li class="nav-list nav-select"><a>Log in</a></li>
-                    <li class="nav-list">
-                        <select name="menu" id="Menu" class="nav-select">
-                            <a href="#"><option value="">Menu</option></a>
-                            <a href="#"><option value="" class="reg-text">Book</option></a>
-                            <a href="#"><option value="" class="reg-text">About</option></a>
-                        </select>
-                    </li>
-                    <li class="nav-list" >    
-                        <select name="" id="" class="nav-select">
-                            <a href="#"><option value="" class="reg-text">INR</option></a>
-                            <a href="#"><option value="" class="reg-text">USD</option></a>
-                        </select>
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-list nav-select"><a href="index.html" class="nav-select-active">Home</a></li>
+                <li class="nav-list nav-select"><a href="login.html" class="nav-select-a">Log in</a></li>
+                <li class="nav-list">
+                    <select name="menu" id="Menu" class="nav-select">
+                        <a href="#"><option value="">Menu</option></a>
+                        <a href="#"><option value="" class="reg-text">Book</option></a>
+                        <a href="#"><option value="" class="reg-text">About</option></a>
+                    </select>
+                </li>
+                <li class="nav-list" >    
+                    <select name="" id="" class="nav-select">
+                        <a href="#"><option value="" class="reg-text">INR</option></a>
+                        <a href="#"><option value="" class="reg-text">USD</option></a>
+                    </select>
+                </li>
         </nav>
         <!-- main -->
         <div class="main-body">
@@ -45,7 +42,7 @@ and open the template in the editor.
             <div class="main-left"">
                 <!-- card 1 -->
                 <div class="display-card">
-                    <img class="hotel-img" src="images/hotel2.jpg" alt="hotel.jpg">
+                    <img class="hotel-img" src="/images/hotel2.jpg" alt="hotel.jpg">
                     <div class="hotel-info">
                         <span class="reg-text" style="font-size:19px;">hotel 1</span>
                         <span class="reg-text" style="font-size:17px; font-weight: 250;">rated</span>
@@ -53,7 +50,7 @@ and open the template in the editor.
                         <span class="reg-text" style="font-size:17px;">Excellent <span style="font-weight: 250;">(91 reviews)</span></span>
                     </div>
                     <div class="card-right">
-                        <div class="card-right-top">
+                        <div class="card-right-top" onmousedown="toRoom1();">
                             <span class="reg-text">Booking.com</span>
                             <span class="bg-text-success reg-text">Free cancelation</span>
                             <span class="card-right-top-1 bg-text-success">$17.4<button class="btn btn-success">View deal</button></span>
@@ -72,7 +69,7 @@ and open the template in the editor.
                 </div>
                 <!-- card 2 -->
                 <div class="display-card">
-                    <img class="hotel-img" src="images/hotel3.jpg" alt="hotel.jpg">
+                    <img class="hotel-img" src="/images/hotel3.jpg" alt="hotel.jpg">
                     <div class="hotel-info">
                         <span class="reg-text" style="font-size:19px;">hotel 1</span>
                         <span class="reg-text" style="font-size:17px; font-weight: 250;">rated</span>
@@ -99,7 +96,7 @@ and open the template in the editor.
                 </div>
                 <!-- card 3 -->
                 <div class="display-card">
-                    <img class="hotel-img" src="images/hotel4.jfif" alt="hotel.jpg">
+                    <img class="hotel-img" src="/images/hotel4.jfif" alt="hotel.jpg">
                     <div class="hotel-info">
                         <span class="reg-text" style="font-size:19px;">hotel 1</span>
                         <span class="reg-text" style="font-size:17px; font-weight: 250;">rated</span>
@@ -133,7 +130,25 @@ and open the template in the editor.
         </div>
         
         <footer class="footer">
-             
+            <div class="container">
+                <div class="footer-top">
+                    <span class="reg-text sm-txt">Want to receive exclusive hotel offers? then subscribe to our news letter</span>
+                    <span class="footer-top-1">
+                        <input class="footer-input" placeholder="Email address">
+                        <button class="btn btn-gray">Subscribe</button>
+                    </span>
+                </div>
+                <hr class="bg-hr-light">
+                <div class="footer-bottom">
+                    <span class="text-large">Trivago</span>
+                    <span class="reg-text sm-txt">copyright 2022 &COPY; Trivago | all rights reserved</span>
+                </div>
+            </div>
         </footer>
+        <script>
+            function toRoom1(){
+                
+            }
+        </script>
     </body>
 </html>
