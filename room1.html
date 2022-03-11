@@ -1,95 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/room1-style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/room1-style.css">
+        <!--        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+        <title>Document</title>
+    </head>
 
-<body>
-  <nav class="nav-bar">
-    <!--create your nav bar here-->
-    <div class="left-nav">
-      <span class="bg-text-danger">get</span><span class="bg-text-orange">my</span><span
-        class="bg-text-navy">trip</span>
-    </div>
-    <li class="nav-list nav-select"><a href="index.html" class="nav-select-active">Home</a></li>
-    <li class="nav-list nav-select"><a href="login.html" class="nav-select-a">Log in</a></li>
-    <li class="nav-list">
-      <select name="menu" id="Menu" class="nav-select">
-        <a href="#">
-          <option value="">Menu</option>
-        </a>
-        <a href="#">
-          <option value="" class="reg-text">Book</option>
-        </a>
-        <a href="#">
-          <option value="" class="reg-text">About</option>
-        </a>
-      </select>
-    </li>
-    <li class="nav-list">
-      <select name="" id="" class="nav-select">
-        <a href="#">
-          <option value="" class="reg-text">INR</option>
-        </a>
-        <a href="#">
-          <option value="" class="reg-text">USD</option>
-        </a>
-      </select>
-    </li>
-  </nav>
-  <!-- main header -->
+    <body>
+        <nav class="nav-bar">
+            <!--create your nav bar here-->
+            <div class="left-nav">
+                <span class="bg-text-danger">get</span><span class="bg-text-orange">my</span><span
+                    class="bg-text-navy">trip</span>
+            </div>
+            <ul class="right-nav">
+                <li class="nav-list nav-select"><a href="index.html" class="nav-select-active">Home</a></li>
+                <li class="nav-list nav-select"><a href="login.html" class="nav-select-a">Log in</a></li>
+                <li class="nav-list">
+                    <select name="menu" id="Menu" class="nav-select">
+                        <option value=""><a href="#">Menu</a></option>
+                        <option value="" class="reg-text"><a href="#">Book</a></option>
+                        <option value="" class="reg-text"><a href="#">About</a></option>
+                    </select>
+                </li>
+                <li class="nav-list">
+                    <select name="" id="" class="nav-select">
+                        <option value="" class="reg-text"><a href="#">INR</a></option>
+                        <option value="" class="reg-text"><a href="#">USD</a></option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <!-- main header -->
 
-  <div class="main-container">
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#" class="list-a">Home</a></li>
-        <li class="breadcrumb-item"><a href="#" class="list-a">Hotels in bangalore</a></li>
-        <li class="breadcrumb-item active" aria-current="page">The continental grounds</li>
-      </ol>
-    </nav>
-    <div class="container-top">
-      <div class="image-container">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/corosel-item-1.jfif" class="d-block w-100 carousel-item" style="width:200px; height:200px;" alt="...">
+        <div class="main-container">
+            <ol class="breadcrumbs-ol">
+                <li class="breadcrumbs-item"><a href="index.html" class="list-a">Home</a> &gt; &nbsp;</li>
+                <li class="breadcrumbs-item"><a href="room1.html" class="list-a">Hotels in bangalore</a> &gt; &nbsp;</li>
+                <li class="breadcrumbs-item-active">The continental grounds</li>
+            </ol>
+            <div class="image-container">
+                <img class="main-img" src="images/hotel1.jpg">
+                <div class="image-container-sub">
+                    <img class="sub-img" src="images/hotel2.jpg" style="margin-bottom: 6px">
+                    <img class="sub-img" src="images/hotel3.jpg">
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/corosel-item-2.jfif" class="d-block w-100 carousel-item" style="width:200px; height:200px;" alt="...">
+            <div class="room-hotel-info">
+                <span class="reg-text">Standard Room</span>
+                <div class="info">
+                    <div class="info-col-1" style="display:flex; flex-direction: column; height: 70; justify-content: space-between; width: 10%; background:green;">
+                        <span class="iconify" data-icon="charm:tick" style="color: #4ecb71; font-size: 15px;"></span>
+                        <span class="iconify" data-icon="charm:tick" style="color: #000000; font-size: 15px;"></span>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="images/corosel-item-3.jfif" class="d-block w-100 carousel-item" style="width:200px; height:200px;" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-        <div class="images-float-col">
-          <img src="images/corosel-item-1.jfif" style="width:200px; height:200px;" class="img-thumbnail" alt="...">
-          <img src="images/corosel-item-2.jfif" style="width:200px; height:200px;" class="img-thumbnail" alt="...">
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
 
 </html>
 
