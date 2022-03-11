@@ -12,7 +12,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="nav-bar">
+        <nav class="nav-bar" style="background-color: white;">
             <!--create your nav bar here-->
             <div class="left-nav">
                 <span class="bg-text-danger">get</span><span class="bg-text-orange">my</span><span
@@ -53,7 +53,7 @@ and open the template in the editor.
                         <span class="reg-text" style="font-size:17px;">Excellent <span style="font-weight: 250;">(91 reviews)</span></span>
                     </div>
                     <div class="card-right">
-                        <div class="card-right-top" onmousedown="toRoom1();">
+                        <div class="card-right-top" onclick="location.href='http://127.0.0.1:5500/room1.html'">
                             <span class="reg-text">Booking.com</span>
                             <span class="bg-text-success reg-text">Free cancelation</span>
                             <span class="card-right-top-1 bg-text-success">$17.4<button class="btn btn-success">View deal</button></span>
@@ -80,7 +80,7 @@ and open the template in the editor.
                         <span class="reg-text" style="font-size:17px;">Excellent <span style="font-weight: 250;">(91 reviews)</span></span>
                     </div>
                     <div class="card-right">
-                        <div class="card-right-top">
+                        <div class="card-right-top" onclick="location.href='http://127.0.0.1:5500/room1.html'">
                             <span class="reg-text">Booking.com</span>
                             <span class="bg-text-success reg-text">Free cancelation</span>
                             <span class="card-right-top-1 bg-text-success">$17.4<button class="btn btn-success">View deal</button></span>
@@ -107,7 +107,7 @@ and open the template in the editor.
                         <span class="reg-text" style="font-size:17px;">Excellent <span style="font-weight: 250;">(91 reviews)</span></span>
                     </div>
                     <div class="card-right">
-                        <div class="card-right-top">
+                        <div class="card-right-top" onclick="location.href='http://127.0.0.1:5500/room1.html'"> 
                             <span class="reg-text">Booking.com</span>
                             <span class="bg-text-success reg-text">Free cancelation</span>
                             <span class="card-right-top-1 bg-text-success">$17.4<button class="btn btn-success">View deal</button></span>
@@ -135,23 +135,18 @@ and open the template in the editor.
         <footer class="footer">
             <div class="container">
                 <div class="footer-top">
-                    <span class="reg-text sm-txt">Want to receive exclusive hotel offers? then subscribe to our news letter</span>
+                    <span class="reg-text sm-txt" style="color: white;">Want to receive exclusive hotel offers? then subscribe to our news letter</span>
                     <span class="footer-top-1">
-                        <input class="footer-input" placeholder="Email address">
+                        <input class="inp-search-bar inp" placeholder="Email address">
                         <button class="btn btn-gray">Subscribe</button>
                     </span>
                 </div>
                 <hr class="bg-hr-light">
                 <div class="footer-bottom">
-                    <span class="text-large">Trivago</span>
-                    <span class="reg-text sm-txt">copyright 2022 &COPY; Trivago | all rights reserved</span>
+                    <span class="text-large" style="font-family:roboto; font-weight:bold; font-size: 25px; color: white;">Trivago</span>
+                    <span class="reg-text sm-txt" style="color: white;">copyright 2022 &COPY; Trivago | all rights reserved</span>
                 </div>
             </div>
         </footer>
-        <script>
-            function toRoom1(){
-                
-            }
-        </script>
     </body>
 </html>

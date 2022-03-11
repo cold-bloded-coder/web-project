@@ -1,71 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/room1-style.css">
-        <!--        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-                      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-        <title>Document</title>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/room1-style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <title>Document</title>
+</head>
 
-    <body>
-        <nav class="nav-bar">
-            <!--create your nav bar here-->
-            <div class="left-nav">
-                <span class="bg-text-danger">get</span><span class="bg-text-orange">my</span><span
-                    class="bg-text-navy">trip</span>
-            </div>
-            <ul class="right-nav">
-                <li class="nav-list nav-select"><a href="index.html" class="nav-select-active">Home</a></li>
-                <li class="nav-list nav-select"><a href="login.html" class="nav-select-a">Log in</a></li>
-                <li class="nav-list">
-                    <select name="menu" id="Menu" class="nav-select">
-                        <option value=""><a href="#">Menu</a></option>
-                        <option value="" class="reg-text"><a href="#">Book</a></option>
-                        <option value="" class="reg-text"><a href="#">About</a></option>
-                    </select>
-                </li>
-                <li class="nav-list">
-                    <select name="" id="" class="nav-select">
-                        <option value="" class="reg-text"><a href="#">INR</a></option>
-                        <option value="" class="reg-text"><a href="#">USD</a></option>
-                    </select>
-                </li>
-            </ul>
-        </nav>
-        <!-- main header -->
+<body>
+  <nav class="nav-bar" style="background-color: white">
+    <!--create your nav bar here-->
+    <div class="left-nav">
+      <span class="bg-text-danger">get</span><span class="bg-text-orange">my</span><span
+        class="bg-text-navy">trip</span>
+    </div>
+    <ul class="right-nav">
+      <li class="nav-list nav-select">
+        <a href="index.html" class="nav-select-active">Home</a>
+      </li>
+      <li class="nav-list nav-select">
+        <a href="login.html" class="nav-select-a">Log in</a>
+      </li>
+      <li class="nav-list">
+        <select name="menu" id="Menu" class="nav-select">
+          <option value=""><a href="#">Menu</a></option>
+          <option value="" class="reg-text"><a href="#">Book</a></option>
+          <option value="" class="reg-text"><a href="#">About</a></option>
+        </select>
+      </li>
+      <li class="nav-list">
+        <select name="" id="" class="nav-select">
+          <option value="" class="reg-text"><a href="#">INR</a></option>
+          <option value="" class="reg-text"><a href="#">USD</a></option>
+        </select>
+      </li>
+    </ul>
+  </nav>
+  <!-- main header -->
 
-        <div class="main-container">
-            <ol class="breadcrumbs-ol">
-                <li class="breadcrumbs-item"><a href="index.html" class="list-a">Home</a> &gt; &nbsp;</li>
-                <li class="breadcrumbs-item"><a href="room1.html" class="list-a">Hotels in bangalore</a> &gt; &nbsp;</li>
-                <li class="breadcrumbs-item-active">The continental grounds</li>
-            </ol>
-            <div class="image-container">
-                <img class="main-img" src="images/hotel1.jpg">
-                <div class="image-container-sub">
-                    <img class="sub-img" src="images/hotel2.jpg" style="margin-bottom: 6px">
-                    <img class="sub-img" src="images/hotel3.jpg">
-                </div>
-            </div>
-            <div class="room-hotel-info">
-                <span class="reg-text">Standard Room</span>
-                <div class="info">
-                    <div class="info-col-1" style="display:flex; flex-direction: column; height: 70; justify-content: space-between; width: 10%; background:green;">
-                        <span class="iconify" data-icon="charm:tick" style="color: #4ecb71; font-size: 15px;"></span>
-                        <span class="iconify" data-icon="charm:tick" style="color: #000000; font-size: 15px;"></span>
-                    </div>
-                </div>
-            </div>
+  <div class="main-container">
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#" class="list-a">Home</a></li>
+        <li class="breadcrumb-item">
+          <a href="#" class="list-a">Hotels in bangalore</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          The continental grounds
+        </li>
+      </ol>
+    </nav>
+    <div class="main-top">
+      <div class="image-container">
+        <img src="images/hotel1.jpg" alt="hotel images" class="main-image" />
+        <div class="image-container-sub">
+          <img src="images/corosel-item-1.jfif" class="sub-images" alt="..." />
+          <img src="images/corosel-item-2.jfif" class="sub-images" alt="..." />
         </div>
-    </body>
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+      </div>
+      <div class="hotel-info-room" style="color: black;">
+        <span style="font-weight: bolder; font-family: roboto; padding:12px 0px 0px 12px; font-weight: bold;"> Standard
+          Room</span>
+        <div class="hotel-infos">
+          <div class="hotel-info-logo">
+            <span class="iconify" data-icon="charm:tick" style="color: #4ecb71; font-size: 20px;"></span>
+            <span class="iconify" data-icon="charm:tick" style="color: #000000; font-size: 20px;"></span>
+          </div>
+          <div class="hotel-info-1">
+            <span style="color:#1F842F; font-weight:bold;">Free Cancelation Till Checkin</span>
+            <span style="font-weight:bold;">Room With free Cancelation</span>
+          </div>
+          <div class="hotel-info-2">
+            <span class="reg-text">Per night</span>
+            <span class="reg-text" style="text-decoration: line-through; color: #A8A8A8;">$210.85</span>
+            <span class="reg-text" style="font-size: 22px;">$109.15</span>
+            <span class="reg-text" style="color: #A8A8A8;">+ $12.5 tax and fees</span>
+            <span class="reg-text" style="color: #FF0000;">Saving $102.23</span>
+          </div>
+        </div>
+        <div class="hotel-infos-2">
+          <span style="color: #53B2FE;">VIEW OTHER ROOMS</span>
+          <button class="custom-button" style="font-size: 12px;">Book This Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="image-bottom">
+      <span class="image-bottom-1">The Contenetal grounds &nbsp;<span class="iconify" data-icon="bi:star-fill"
+          style="color: black; font-size: 17px;"></span><span class="iconify" data-icon="bi:star-fill"
+          style="color: black; font-size: 17px;"></span><span class="iconify" data-icon="bi:star-fill"
+          style="color: black; font-size: 17px;"></span><span class="iconify" data-icon="bi:star-fill"
+          style="color: black; font-size: 17px;"></span><span class="iconify" data-icon="bi:star-fill"
+          style="color: rgb(207, 207, 207); font-size: 17px;"></span> </span>
+      <div style="display: flex; align-items: center; width: auto; height: auto;">
+        <span class="iconify" data-icon="el:map-marker" style="color: #666; font-size: 36px;"></span>
+        <span class="image-bottom-2">Brookefield, bangalore</span>
+      </div>
+    </div>
+    <div class="hotel-priview">
+      <span class="hotel-priview-1">Property Highlights</span>
+      <div class="hotel-priview-table">
+        <div class="tr1">
+          <div class="td1"><span class="color:#4A4A4A; font:20px;">Service Quality</span><span
+              style="color: #0084FF;">26 Priviews</span></div>
+          <div class="td1"><span class="color:#4A4A4A; font:20px;">Food</span><span style="color: #0084FF;">26
+              Priviews</span></div>
+          <div class="td1"><span class="color:#4A4A4A; font:20px;">About</span><span style="color: #0084FF;">26
+              Priviews</span></div>
+        </div>
+        <div class="tr2"  style="line-height: 5px;">
+          <div class="td2" style="width: 50%; font-weight: bold;">
+            <span class="iconify" data-icon="ei:like" style="color: #666; font-size: 36px;"></span> <span
+              style="font-size: 14px;">200+ guests like you rated their stay Very
+              Good</span>
+          </div>
+          <div class="td2" style="width: 50%; font-weight: bold;">
+            <span class="iconify" data-icon="uil:calender" style="color: rgb(151, 150, 150); font-size: 25px;"></span> &nbsp;&nbsp;<span
+              style="font-size: 14px;">Perfect for one night stay</span>
+          </div>
+          <div class="td2" style="width: 50%; font-weight: bold;">
+            <span class="iconify" data-icon="emojione-monotone:couple-with-heart-man-man" style="color: #666; font-size: 30px;"></span>&nbsp; <span
+              style="font-size: 14px;">A couple-friendly property (or have local IDs are welcome)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <span class="reg-text sm-txt" style="color: white;">Want to receive exclusive hotel offers? then subscribe to our news letter</span>
+            <span class="footer-top-1">
+                <input class="inp-search-bar inp" placeholder="Email address">
+                <button class="btn btn-gray">Subscribe</button>
+            </span>
+        </div>
+        <hr class="bg-hr-light">
+        <div class="footer-bottom">
+            <span class="text-large" style="font-family:roboto; font-weight:bold; font-size: 25px; color: white;">Trivago</span>
+            <span class="reg-text sm-txt" style="color: white;">copyright 2022 &COPY; Trivago | all rights reserved</span>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
 </html>
 

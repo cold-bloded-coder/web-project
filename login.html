@@ -5,70 +5,99 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/login-style.css">
-    </head>
-    <body>
-        <nav class="nav-bar">
-            <!--create your nav bar here-->
-            <div class="left-nav">
-                <span class="bg-text-danger">get</span><span class="bg-text-orange">my</span><span class="bg-text-navy">trip</span>
-            </div>
-            <li class="nav-list nav-select"><a href="index.html" class="nav-select-a">Home</a></li>
-            <li class="nav-list nav-select"><a href="login.html" class="nav-select-active">Log in</a></li>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login-style.css">
+</head>
+
+<body>
+    <nav class="nav-bar" style="background-color: white;">
+        <!--create your nav bar here-->
+        <div class="left-nav">
+            <span class="bg-text-danger">get</span><span class="bg-text-orange">my</span><span
+                class="bg-text-navy">trip</span>
+        </div>
+        <ul class="right-nav">
+            <li class="nav-list nav-select"><a href="index.html" class="nav-select-active">Home</a></li>
+            <li class="nav-list nav-select"><a href="login.html" class="nav-select-a">Log in</a></li>
             <li class="nav-list">
                 <select name="menu" id="Menu" class="nav-select">
-                    <a href="#"><option value="">Menu</option></a>
-                    <a href="#"><option value="" class="reg-text">Book</option></a>
-                    <a href="#"><option value="" class="reg-text">About</option></a>
+                    <option value=""><a href="#">Menu</a></option>
+                    <option value="" class="reg-text"><a href="#">Book</a></option>
+                    <option value="" class="reg-text"><a href="#">About</a></option>
                 </select>
-                    </li>
-              
-                    <li class="nav-list" >    
-                        <select name="" id="" class="nav-select">
-                            <a href="#"><option value="" class="reg-text">INR</option></a>
-                            <a href="#"><option value="" class="reg-text">USD</option></a>
-                        </select>
-                    </li>            
-        </nav>
-        <div class="main-body bg-light ">
-            <div class="container sh-light-gray login-container">
-                <div class="header">
-                    <span class="bg-text-danger  text-big">get</span><span class="bg-text-orange  text-big">my</span><span class="bg-text-navy  text-big">trip</span>
-                </div>
-                <div class="login-container-body">
-                    <div class="left-login-container">
-                        <span class="text-big login-text b ">Login or Create an Account</span><span class="login-text sm-text">enter your email address to start</span><span class="reg-text login-text">Email address</span>
-                        <input type="text" placeholder="Email address" class="input">
-                        <button class="btn-big">Next</button>
-                    </div>
-                    <div class="vr"></div>
-                    <div class="right-login-container">
-                        <div class="btn-logo">
-                            <span class="iconify" data-icon="ant-design:google-plus-outlined" style="color: #f24e1e; font-size: 36px;" ></span>
-                            <button class="btn-big-login" style="font-weight:normal; border-left: 0px;" >Sign in to get my trip using google</button>
-                        </div>
-                        <div class="btn-logo">
-                            <span class="iconify" data-icon="carbon:logo-facebook" style="color: #2c92b2; font-size: 36px;"></span>
-                            <button class="btn-big-login" style="font-weight:bold; border-left: 0px;">Continue with facebook</button>
-                        </div>
-                        <div class="btn-logo">
-                            <span class="iconify" data-icon="bi:apple" style="color: #ccc; font-size: 36px;"></span>
-                            <button class="btn-big-login" style="font-weight:bold; border-left: 0px;">Continue with apple</button>
-                        </div>
-                    </div>
-                </div>
+            </li>
+            <li class="nav-list">
+                <select name="" id="" class="nav-select">
+                    <option value="" class="reg-text"><a href="#">INR</a></option>
+                    <option value="" class="reg-text"><a href="#">USD</a></option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-body bg-light ">
+        <div class="container sh-light-gray login-container">
+            <div class="header">
+                <span class="bg-text-danger  text-big">get</span><span class="bg-text-orange  text-big">my</span><span
+                    class="bg-text-navy  text-big">trip</span>
             </div>
-            <div class="login-footer" style="padding: 15px 15vw;">
-                <span class="reg-text text-big" style="color: rgb(155, 155, 155);">Don't have an account yet?</span>
-                <button class="input-btn">Create an Account</button>
+            <div class="login-container-body">
+                <div class="left-login-container">
+                    <span class="text-big login-text b ">Login or Create an Account</span><span
+                        class="login-text sm-text">enter your email address to start</span><span
+                        class="reg-text login-text">Email address</span>
+                    <input type="text" placeholder="Email address" class="input">
+                    <button class="btn-big">Next</button>
+                </div>
+                <div class="vr"></div>
+                <div class="right-login-container">
+                    <div class="btn-logo">
+                        <span class="iconify" data-icon="ant-design:google-plus-outlined"
+                            style="color: #f24e1e; font-size: 36px;"></span>
+                        <button class="btn-big-login" style="font-weight:normal; border-left: 0px;">Sign in to get my
+                            trip using google</button>
+                    </div>
+                    <div class="btn-logo">
+                        <span class="iconify" data-icon="carbon:logo-facebook"
+                            style="color: #2c92b2; font-size: 36px;"></span>
+                        <button class="btn-big-login" style="font-weight:bold; border-left: 0px;">Continue with
+                            facebook</button>
+                    </div>
+                    <div class="btn-logo">
+                        <span class="iconify" data-icon="bi:apple" style="color: #ccc; font-size: 36px;"></span>
+                        <button class="btn-big-login" style="font-weight:bold; border-left: 0px;">Continue with
+                            apple</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- icon script -->
-        <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    </body>
+        <div class="login-footer" style="padding: 15px 15vw;">
+            <span class="reg-text text-big" style="color: rgb(155, 155, 155);">Don't have an account yet?</span>
+            <button class="input-btn">Create an Account</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <span class="reg-text sm-txt" style="color: white;">Want to receive exclusive hotel offers? then subscribe to our news letter</span>
+                <span class="footer-top-1">
+                    <input class="inp-search-bar inp" placeholder="Email address">
+                    <button class="btn btn-gray">Subscribe</button>
+                </span>
+            </div>
+            <hr class="bg-hr-light">
+            <div class="footer-bottom">
+                <span class="text-large" style="font-family:roboto; font-weight:bold; font-size: 25px; color: white;">Trivago</span>
+                <span class="reg-text sm-txt" style="color: white;">copyright 2022 &COPY; Trivago | all rights reserved</span>
+            </div>
+        </div>
+    </footer>
+    <!-- icon script -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</body>
+
 </html>
